@@ -4,6 +4,6 @@
 
 **NeilApenaz:** ideia desse caos inteiro, suporte moral : )
 
-**Gabil-n-l:** qualquer coisa
+**Gabil-n-l:** arte
 
 **felps da silvinha nha nha**: NADA!!!!!
