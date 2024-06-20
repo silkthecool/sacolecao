@@ -1,9 +1,9 @@
-# Sacoleção // Um projeto escolar feito em uma semana
+# Sacoleção // Um projeto escolar feito em um dia
 ## Desenvolvedores:
 **silkthecool:** direção, arte e programação
 
-**NeilApenaz:** ideia desse caos inteiro, suporte moral : )
-
 **Gabil-n-l:** arte
 
-**felps da silvinha nha nha**: NADA!!!!!
+**ultrazilla_**: arte
+
+**NeilApenaz:** ideia desse caos inteiro, suporte moral : )
