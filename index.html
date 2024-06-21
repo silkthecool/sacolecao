@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
+<script>
+    var clicks = 0;
+    var totalClicks = 0;
+    news = "...";
+    function clickLol() {
+        clicks = clicks + 1;
+        totalClicks = totalClicks + 1;
+        document.getElementById('text1').innerHTML = 'você recolheu ' + clicks + ' sacolas (total: ' + totalClicks + ')';
+        document.getElementById('text2').innerHTML = 'NOTÍCIAS: ' + news;
+        if (totalClicks > 0, totalClicks < 49) {
+            news = "suas contribuições não são percebidas até agora...";
+        } else if (totalClicks > 49, totalClicks < 199) {
+            news = "pessoas percebem ruas mais limpas! boatos se espalham por volta da cidade.";
+        } else if (totalClicks > 199, totalClicks < 499) {
+            news = "a prefeitura foi notificada sobre seus atos anônimos, uma suspeita logo surge.";
+        } else if (totalClicks > 499, totalClicks < 999) {
+            news = "muitas ruas aparecem ser mais limpas do que o comum. a infraestrutura do brasil aumenta por 1%.";
+        } else if (totalClicks > 999, totalClicks < 2499) {
+            news = "muitos sargentos procuram quem será essa pessoa por trás de todos estes atos de gentileza, panflets são postos todo lugar pela cidade.";
+        } else if (totalClicks > 2499, totalClicks < 4999) {
+            news = "o MANOEL GOMES quer conhecer você pelos seus atos, único problema é que ninguém conhece quem fez tudo isto.";
+        }  else if (totalClicks > 4999, totalClicks < 9999) {
+            news = "o prefeito entra na busca por você, ele lhe oferece muitos prêmios";
+        } else if (totalClicks > 9999, totalClicks < 24999 ) {
+            news = "você é conhecido como \"senhor limpeza\", como apelido posto pela sua anonimidade";
+        } else if (totalClicks > 24999, totalClicks < 49999 ) {
+            news = "empresas de coleta de lixo estão em busca por esta tal pessoa, como oportunidade de mudar o mundo inteiro.";
+        } else if (totalClicks > 49999, totalClicks < 99999 ) {
+            news = "tubos de sucção vistos coletando lixo por volta do nordeste brasileiro, ninguém sabe de onde eles vem, mas o que importa é a eficiência que trazem a todos";
+        } else if (totalClicks > 99999, totalClicks < 199999 ) {
+            news = "detetives são postos para investigar o que está acontecendo por aqui.";
+        } else if (totalClicks > 199999, totalClicks < 499999 ) {
+            news = "o nordeste INTEIRO do brasil está limpo inteiramente e continuará assim se a remoção de sacolas prosseguir mais profundamente.";
+        } else if (totalClicks > 499999, totalClicks < 999999 ) {
+            news = "o presidente do brasil ouve sobre as notícias, ele está eufórico para lhe conhecer.";
+        } else if (totalClicks > 999999, totalClicks < 2499999 ) {
+            news = "a notícia se espalha por todas as redes sociais no brasil, para depois ser reconhecidos por pessoas de fora do país.";
+        } else if (totalClicks > 2499999, totalClicks < 4999999 ) {
+            news = "por conta do espalhamento de notícias, TODOS no brasil começam a pesquisa de quem seria essa pessoa.";
+        } else if (totalClicks > 4999999, totalClicks < 7499999 ) {
+            news = "duas regiões inteiras são completamente limpas. não há como voltar agora.";
+        } else if (totalClicks > 4999999, totalClicks < 7499999 ) {
+            news = "influencers criam nova trend: \"joguem lixo fora do lixo\", concluem que \"vão recolher tudo mesmo\"";
+        } else if (totalClicks > 7499999, totalClicks < 9999999 ) {
+            news = "empresas famosas se inspiram pelos seus atos de bondade e criam caminhões de lixo distribuídos por INTELIGÊNCIA ARTIFICIAL.";
+        } else if (totalClicks > 9999999, totalClicks < 24999999 ) {
+            news = "cientistas estudam sacolas cada vez mais, descobrem que há uma substância responsável pela facilidade de remoção";
+        } else if (totalClicks > 24999999, totalClicks < 49999999 ) {
+            news = "existem fábricas que descobriram como fabricar coisas a partir de sacolas, e apenas sacolas";
+        } else if (totalClicks > 49999999, totalClicks < 74999999 ) {
+            news = "estátuas são construídas inspiradas em você, apenas para parecer como uma pessoa com um manto parecido que é feito de sacolas";
+        } else if (totalClicks > 74999999, totalClicks < 99999999 ) {
+            news = "a américa do sul inteira foi limpa, mas mitos dizem que o anônimo por trás disso não planeja parar por aqui.";
+        } else if (totalClicks > 99999999, totalClicks < 249999999 ) {
+            news = "a organização das nações unidas reconhece seus atos; apenas a coreia do norte vota contra elas.";
+        } else if (totalClicks > 249999999, totalClicks < 499999999 ) {
+            news = "dois continentes inteiros estão completamente limpos até agora. mais mitos surgem, dizendo que \"o mundo inteiro será sacolas\".";
+        } else if (totalClicks > 499999999, totalClicks < 749999999 ) {
+            news = "há modelos de robôs humanos feitos apenas de sacolas, até mesmo suas composições internas. muitos estão paranóicos sobre isto.";
+        } else if (totalClicks > 749999999, totalClicks < 999999999 ) {
+            news = "aliens reconhecem seus atos, logo visitam humanos para tentar estudar isto.";
+        } else if (totalClicks > 999999999) {
+            news = "o planeta terra se transforma em sacolas. você não consegue ser parado. Ah espera essa é a última mensagem obrigado por jogar eu acho";
+        } 
+    }
+</script>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<button>TESTE</button>
-</body>
+    
+    <div>
+        <h1>SACOLEÇÃO // um "jogo" feito em 1 dia com javascript e html</h1>
+        <h2>já que isto foi feito em apenas 1 dia, terá mais depois quando eu quiser expandí-lo. FIQUE ATENTO(A) POR ATUALIZAÇÕES!! :  ) </h2>
+        <p id="text1">você recolheu 0 sacolas</p>
+        <button id="button" onclick="clickLol()">clique para recolher uma sacola</button>
+        <p id="text2">NOTÍCIAS: ...</p>
+        <p>-------------------------------------------------------------------</p>
+        <h3>LOJA:</h3>
+        <p><b>-- TRABALHO EM PROGRESSO --</b>  (quando eu tiver mais tempo livre)</p>
+    </div>
 </html>
