@@ -3,11 +3,14 @@
 <script>
     var clicks = 0;
     var totalClicks = 0;
+    var aspiradores = 0;
+    var clicksNeeded = 15;
+    var buyMultiplier = 2;
     news = "...";
     function clickLol() {
         clicks = clicks + 1;
         totalClicks = totalClicks + 1;
-        document.getElementById('text1').innerHTML = 'você recolheu ' + clicks + ' sacolas (total: ' + totalClicks + ')';
+        document.getElementById('text1').innerHTML = 'você recolheu ' + clicks + ' sacolas <b>(total: ' + totalClicks + ')</b>';
         document.getElementById('text2').innerHTML = 'NOTÍCIAS: ' + news;
         if (totalClicks > 0, totalClicks < 49) {
             news = "suas contribuições não são percebidas até agora...";
@@ -65,6 +68,18 @@
             news = "o planeta terra se transforma em sacolas. você não consegue ser parado. Ah espera essa é a última mensagem obrigado por jogar eu acho";
         } 
     }
+
+    function buyThingy() {
+        if (clicks >= clicksNeeded) {
+            aspiradores = aspiradores + 1;
+            clicks = clicks - clicksNeeded;
+            clicksNeeded = clicksNeeded * buyMultiplier;
+            buyMultiplier = buyMultiplier + 1;
+            document.getElementById('text1').innerHTML = 'você recolheu ' + clicks + ' sacolas (<b>total: ' + totalClicks + ')</b>';
+            document.getElementById('text2').innerHTML = 'NOTÍCIAS: ' + news;
+            document.getElementById('store1').innerHTML = aspiradores + ' aspiradores - ' + clicksNeeded + ' sacolas';
+        }
+    }
 </script>
 <body>
     
@@ -76,6 +91,7 @@
         <p id="text2">NOTÍCIAS: ...</p>
         <p>-------------------------------------------------------------------</p>
         <h3>LOJA:</h3>
-        <p><b>-- TRABALHO EM PROGRESSO --</b>  (quando eu tiver mais tempo livre)</p>
+        <p id="store1"><b>0 aspiradores</b> - 15 sacolas</p>
+        <button id="buy1" onclick="buyThingy()">comprar 1 aspirador</button>    
     </div>
 </html>
